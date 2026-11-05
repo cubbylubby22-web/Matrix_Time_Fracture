@@ -1,0 +1,224 @@
+/*
+  DEATHLORD OF THE JUNGLE — Lioden custom stylesheet
+  Palette inspired by the user's purple / electric-blue cosmic lion poster.
+  Install by hosting this file publicly (GitHub Pages recommended), then
+  linking it in Den > Edit Your Details > Territory Description.
+*/
+
+/* ---------- Core palette ---------- */
+:root {
+  --dlot-bg: #080617;
+  --dlot-bg-deep: #03030d;
+  --dlot-panel: rgba(14, 10, 35, 0.96);
+  --dlot-panel-soft: rgba(27, 16, 58, 0.94);
+  --dlot-purple: #9b35ff;
+  --dlot-violet: #c56bff;
+  --dlot-blue: #238dff;
+  --dlot-cyan: #65d9ff;
+  --dlot-pink: #ed69ff;
+  --dlot-text: #eee7ff;
+  --dlot-muted: #c9b9e8;
+  --dlot-line: #7134bd;
+}
+
+/* ---------- Page background and typography ---------- */
+html {
+  background: var(--dlot-bg-deep) !important;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 12% 8%, rgba(106, 22, 190, .32), transparent 34%),
+    radial-gradient(ellipse at 88% 18%, rgba(0, 105, 255, .25), transparent 32%),
+    radial-gradient(ellipse at 50% 78%, rgba(89, 22, 154, .22), transparent 42%),
+    linear-gradient(145deg, #03030d 0%, #100923 48%, #05091c 100%) !important;
+  color: var(--dlot-text) !important;
+  font-family: "Trebuchet MS", Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3 {
+  color: #e7c7ff !important;
+  text-shadow: 0 0 9px rgba(175, 76, 255, .7), 0 0 18px rgba(43, 132, 255, .35);
+}
+
+/* ---------- Top bars / navigation ---------- */
+.topbar, #header, #topbar {
+  background: linear-gradient(90deg, #17072f, #071b42 55%, #24083e) !important;
+  color: #f3e9ff !important;
+  border-bottom: 1px solid #7d43dc !important;
+  box-shadow: 0 3px 18px rgba(106, 37, 255, .35) !important;
+}
+
+.navbar, #navbar {
+  background: linear-gradient(90deg, #100822, #10275a, #160a31) !important;
+  border-bottom: 1px solid #286edb !important;
+  box-shadow: 0 4px 16px rgba(23, 102, 255, .25) !important;
+}
+
+.topbar a, .navbar a, #header a, #navbar a {
+  color: #e9c9ff !important;
+}
+
+.topbar a:hover, .navbar a:hover, #header a:hover, #navbar a:hover {
+  color: #7ee4ff !important;
+  text-shadow: 0 0 8px #8e4cff;
+}
+
+/* ---------- Main content panels ---------- */
+.panel, .card, .container, .well, .profile, .userbox,
+#main, #content, #page-content, .col-md-* {
+  color: var(--dlot-text);
+}
+
+.panel, .card, .well, .userbox, .table, .table-responsive,
+.alert, .breadcrumb, .comment, .comment-box,
+#comment-box, #player, #playerbox {
+  background-color: var(--dlot-panel) !important;
+  color: var(--dlot-text) !important;
+  border: 1px solid rgba(151, 83, 255, .72) !important;
+  box-shadow: 0 0 10px rgba(112, 43, 221, .22), inset 0 0 16px rgba(32, 75, 170, .10) !important;
+}
+
+.panel-heading, .card-header, .panel-title, .userbox-header,
+th, .table th, .topbar, .navbar {
+  background: linear-gradient(100deg, #32105b, #102b61 58%, #3a125e) !important;
+  color: #f5e8ff !important;
+  border-color: #8145d8 !important;
+}
+
+/* ---------- Links and text ---------- */
+a, a:visited, .text-muted, small {
+  color: #d4a4ff !important;
+}
+
+a:hover {
+  color: var(--dlot-cyan) !important;
+  text-shadow: 0 0 7px rgba(78, 179, 255, .7);
+}
+
+p, li, label, td, th, span {
+  text-shadow: none;
+}
+
+hr {
+  border-color: rgba(151, 83, 255, .5) !important;
+}
+
+/* ---------- Tables and information tiles ---------- */
+table, .table {
+  background-color: rgba(12, 9, 29, .94) !important;
+  color: var(--dlot-text) !important;
+  border-color: #59319a !important;
+}
+
+td, th, .table td, .table th {
+  border-color: rgba(129, 69, 216, .55) !important;
+}
+
+tr:nth-child(even), .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(54, 28, 91, .42) !important;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(9, 17, 46, .52);
+}
+
+/* ---------- Buttons, inputs, dropdowns ---------- */
+button, .btn, input[type="submit"], input[type="button"], input[type="reset"] {
+  background: linear-gradient(135deg, #6d25bd, #244eaa) !important;
+  color: #fff2ff !important;
+  border: 1px solid #bd79ff !important;
+  border-radius: 6px !important;
+  box-shadow: 0 0 9px rgba(135, 61, 255, .35) !important;
+}
+
+button:hover, .btn:hover, input[type="submit"]:hover,
+input[type="button"]:hover, input[type="reset"]:hover {
+  background: linear-gradient(135deg, #963cff, #167fc9) !important;
+  color: white !important;
+  box-shadow: 0 0 14px rgba(83, 166, 255, .6) !important;
+}
+
+input, select, textarea, .form-control {
+  background-color: #100d25 !important;
+  color: #f1eaff !important;
+  border: 1px solid #7950b7 !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b7a4d2 !important;
+}
+
+/* ---------- Den tiles, image cards, and profile sections ---------- */
+.thumbnail, .well-sm, .list-group-item, .media, .cave,
+.cave-card, .lion-card, .featured, .box {
+  background-color: rgba(19, 13, 43, .94) !important;
+  color: var(--dlot-text) !important;
+  border-color: #7040b5 !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.thumbnail img, .cave img, .lion-card img {
+  border-color: #6d43b4;
+}
+
+/* ---------- Chat and message areas ---------- */
+#chatbox, .chatbox, .chat-box, .chat,
+.chat-message, .chat_message, .chat-messages {
+  background-color: #0b0b20 !important;
+  color: #eee7ff !important;
+  border-color: #6540a8 !important;
+}
+
+.chat-message:nth-child(even), .chat_message:nth-child(even) {
+  background-color: rgba(65, 36, 104, .42) !important;
+}
+
+/* ---------- Alerts and progress bars ---------- */
+.alert, .alert-info, .alert-warning, .alert-danger, .alert-success {
+  background: rgba(37, 22, 69, .96) !important;
+  color: #f2eaff !important;
+  border-color: #8954cf !important;
+}
+
+.progress {
+  background-color: #17112d !important;
+  border: 1px solid #5c3a91 !important;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #7628d4, #267fe8, #c45aff) !important;
+}
+
+/* ---------- Breadcrumbs and footer ---------- */
+.breadcrumb, .breadcrumb a {
+  color: #d8b9ff !important;
+}
+
+footer, #footer, .footer {
+  background: linear-gradient(100deg, #160727, #071a3b, #1c082e) !important;
+  color: #d9c9f1 !important;
+  border-top: 1px solid #7442c2 !important;
+}
+
+/* ---------- Mobile-friendly refinements ---------- */
+@media screen and (max-width: 600px) {
+  body {
+    background:
+      radial-gradient(ellipse at top left, rgba(107, 28, 181, .28), transparent 38%),
+      radial-gradient(ellipse at top right, rgba(16, 103, 223, .22), transparent 38%),
+      linear-gradient(155deg, #05040f, #100923 55%, #05091b) !important;
+    background-attachment: scroll !important;
+  }
+
+  .panel, .card, .well, .userbox, .table-responsive {
+    box-shadow: 0 0 8px rgba(112, 43, 221, .20) !important;
+  }
+
+  button, .btn, input[type="submit"], input[type="button"] {
+    max-width: 100%;
+  }
+}
